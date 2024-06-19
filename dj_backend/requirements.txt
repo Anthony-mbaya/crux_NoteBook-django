@@ -1,0 +1,29 @@
+# ASGI(Asynchronous Server Gateway Interface)  reference implementation, enables async support in Django
+asgiref 
+
+# Django web framework
+Django
+
+# CORS(Cross-Origin Resource Sharing ) headers handling for Django , allowing your API to be accessible from different domains.
+django-cors-headers
+
+# Django REST framework for building APIs
+djangorestframework
+
+# JWT(JSON Web Tokens) authentication for Django REST framework  JSON Web Token authentication plugin
+djangorestframework-simplejwt
+
+# Python library for encoding/decoding JSON Web Tokens
+PyJWT
+
+# Timezone library for accurate and cross-platform timezone calculations
+pytz
+
+# SQL parser for Python, useful for database management
+sqlparse
+
+# PostgreSQL adapter for Python, for interacting with PostgreSQL databases
+psycopg2-binary
+
+# Library to read .env files and set environment variables
+python-dotenv
