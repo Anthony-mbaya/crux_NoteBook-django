@@ -14,7 +14,7 @@ from pathlib import Path
 from datetime import timedelta
 from dotenv import load_dotenv
 import os
- 
+
 load_dotenv() #handle db credentials
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -99,12 +99,12 @@ WSGI_APPLICATION = 'dj_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER':os.getenv('DB_USER'),
-        'PASSWORD':os.getenv('DB_PWD'),
-        'HOST':os.getenv('DB_HOST'),
-        'PORT':os.getenv('DB_PORT'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.getenv('DB_NAME', 'NOTEBOOK'),
+        'USER':os.getenv('DB_USER', 'root'),
+        'PASSWORD':os.getenv('DB_PASSWORD', 'toshtony12'),
+        'HOST':os.getenv('DB_HOST', 'localhost'),
+        'PORT':os.getenv('DB_PORT', '3306'),
     }
 }
 
