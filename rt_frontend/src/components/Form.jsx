@@ -2,6 +2,7 @@ import api from "../api";
 import { useNavigate } from "react-router-dom";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
 import { useState } from "react";
+import './fm.css';
 
 //route - go to when submit the form
 //method - registering or login in
@@ -51,6 +52,9 @@ export const Form = ({ route, method }) => {
         placeholder="password"
       />
       <input type="submit" value={heading} />
+      {
+        method == 'login' ? (<a href='/register'>register</a>) : (<a href='/login'>login</a>)
+      }
     </form>
   );
 };

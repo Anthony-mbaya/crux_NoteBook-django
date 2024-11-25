@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import api from "../api";
-import { Note } from "../components/Note";
+import { Note } from "../components/Note"; 
+import { Link, useNavigate } from 'react-router-dom';
 
 export const Home = () => {
   const [notes, setNotes] = useState([]);
   const [content, setContent] = useState("");
   const [title, setTitle] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     getNotes();
@@ -48,10 +50,14 @@ export const Home = () => {
   };
   return (
     <div>
+    <span>
       <h1>Notes</h1>
+       <Link to={'/logout'}>logout</Link>
+       </span>
       {notes.map((note) => (
         <Note note={note} onDelete={deleteNote} key={note.id} />
       ))}
+     
       <form onSubmit={createNote}>
         <input
           type="text"
