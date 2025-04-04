@@ -1,0 +1,53 @@
+.note-container{
+    background-color: white;
+    width: 90%;
+    padding: 1.3rem;
+}
+.title-date{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    color: green;
+    text-transform: uppercase;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.date{
+    font-size: 0.8rem;
+    color: rgb(88, 86, 86);
+}
+.content{
+    background-color: rgb(238, 238, 238);
+    padding: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 0.5rem;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+.delete-btn{
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 100;
+    border: none;
+    color: red;
+    border: 1px solid red;
+    width: fit-content;
+}
+.delete-btn:hover{
+    background-color:rgb(255, 86, 86) ;
+    transition: all;
+    transition-duration:300ms;
+    border: 1px solid white;
+    color: white;
+}
+.delete-btn-span{
+    width: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content: flex-end;
+}

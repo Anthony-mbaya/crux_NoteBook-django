@@ -2,7 +2,7 @@ import api from "../api";
 import { useNavigate } from "react-router-dom";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
 import { useState } from "react";
-import './fm.css';
+import './form.css';
 
 //route - go to when submit the form
 //method - registering or login in
@@ -37,7 +37,8 @@ export const Form = ({ route, method }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div class="form-container">
+    <form onSubmit={handleSubmit} class="form">
       <h1>{heading}</h1>
       <input
         type="text"
@@ -51,10 +52,11 @@ export const Form = ({ route, method }) => {
         onChange={(e) => setPassword(e.target.value)}
         placeholder="password"
       />
-      <input type="submit" value={heading} />
+      <button type="submit" class="submit-btn"> {heading}</button>
       {
-        method == 'login' ? (<a href='/register'>register</a>) : (<a href='/login'>login</a>)
+        method == 'login' ? (<p class="link-txt">Don't have account? <a href='/register'>register</a></p>) : (<p class="link-txt">Having an account? <a href='/login'>login</a></p>)
       }
     </form>
+    </div>
   );
 };

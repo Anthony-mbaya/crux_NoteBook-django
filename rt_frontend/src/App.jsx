@@ -4,6 +4,7 @@ import { Login } from "./pages/Login";
 import { NotFound } from "./pages/NotFound";
 import { Register } from "./pages/Register";
 import { Home } from "./pages/Home";
+import { Create } from "./pages/Create";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 
 function Logout() {
@@ -29,6 +30,7 @@ export const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/register" element={<RegisterAndLogout />} />
+        <Route path="/create" element={<Create />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

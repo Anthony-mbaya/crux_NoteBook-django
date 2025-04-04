@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.form-container{
+    background-color: rgb(240, 240, 240);
+    width: screen;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*creation of a  a note */
+.create-title{
+    display: flex;
+    gap: 5rem;
+}
+.create-title button{
+    cursor: pointer;
+    border: none;
+}
+.create-title button:hover{
+    color: slateblue;
+}
+.create-title h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+.form{
+    background-color: white;
+    padding:5rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 1.2rem;
+    font-weight: 100;
+}
+h1{
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.form input,textarea{
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.form textarea{
+    min-height: 5rem;
+    min-width: 100%;
+}
+.form input::placeholder{
+    font-weight: 100;
+}
+.form input:focus{
+    background-color: white;
+    border: 1px solid orange;
+}
+.submit-btn{
+    width: 100%;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 100;
+    border: none;
+    color: slateblue;
+    border: 1px solid slateblue;
+}
+.submit-btn:hover{
+    background-color:rgb(238, 238, 238) ;
+    transition: all;
+    transition-duration:300ms;
+    border: none;
+}
+.link-txt{
+    font-size: 0.7rem;
+}
